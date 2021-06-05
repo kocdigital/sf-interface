@@ -1,7 +1,7 @@
 import { AxiosInstance } from 'axios';
 
 export interface AsyncConfig {
-  get(key: string): Promise<string | null>;
+  get(key: string): Promise<string | undefined>;
 }
 
 export interface Service {
