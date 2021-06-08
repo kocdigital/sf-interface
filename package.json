@@ -2,7 +2,7 @@
   "name": "@kocdigital/sf-interface",
   "author": "Özgür Çimen",
   "email": "derozgur@gmail.com",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Koc Digital Safe Frames Micro-frontend Interface",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",

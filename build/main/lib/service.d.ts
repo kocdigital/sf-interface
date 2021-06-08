@@ -2,9 +2,15 @@ import { AxiosInstance } from 'axios';
 export interface AsyncConfig {
     get(key: string): Promise<string | undefined>;
 }
+export interface ApiInstanceOptions {
+    customHeaders?: object;
+    errorMiddleware?(d: Date): void;
+    loader?: boolean;
+    disableErrorNotifications?: boolean;
+}
 export interface Service {
-    createSecureInstance(baseUrl: string): AxiosInstance;
-    createUnsecureInstance(baseUrl: string): AxiosInstance;
+    createSecureInstance(baseUrl: string, options?: ApiInstanceOptions): AxiosInstance;
+    createUnsecureInstance(baseUrl: string, options?: ApiInstanceOptions): AxiosInstance;
     getToken(): string;
     getSettings(): any;
     setConfig(value: any): any;
