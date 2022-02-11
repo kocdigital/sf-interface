@@ -17,6 +17,7 @@ export interface Service {
     signOut(): any;
     checkUser(): any;
     getSolution(): string;
+    getOrganization(): string;
     setTheme(isDark: boolean): void;
     onThemeChange(isDark: boolean): void;
     store: any;

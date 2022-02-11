@@ -32,6 +32,8 @@ export interface Service {
 
   getSolution(): string;
 
+  getOrganization(): string;
+
   setTheme(isDark: boolean): void;
 
   onThemeChange(isDark: boolean): void;
